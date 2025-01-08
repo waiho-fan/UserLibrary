@@ -56,6 +56,7 @@ struct ContentView: View {
                     }
 
                 }
+                .onDelete(perform: removeItems)
             }
             .navigationTitle("User Store")
             .toolbar {
@@ -70,8 +71,18 @@ struct ContentView: View {
             })
         }
         .onAppear(perform: loadUsers)
-        
     }
+
+    func removeItems(at indexSet: IndexSet) {
+            let sortedIndices = Array(sortedUsers)
+            let toDelete = indexSet.map { sortedIndices[$0] }
+            
+            users.removeAll { user in
+                toDelete.contains { $0.id == user.id }
+            }
+            
+            save()
+        }
 }
 
 #Preview {
