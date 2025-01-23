@@ -14,6 +14,7 @@
 		4E47894D2D2E04CC0088215F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E47894C2D2E04CC0088215F /* User.swift */; };
 		4E47894F2D2E17CF0088215F /* AddUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E47894E2D2E17CF0088215F /* AddUserView.swift */; };
 		4E4789532D2ECA070088215F /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4789522D2ECA070088215F /* UserDetailView.swift */; };
+		4E4789552D2F458F0088215F /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4789542D2F458F0088215F /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4E47894C2D2E04CC0088215F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4E47894E2D2E17CF0088215F /* AddUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserView.swift; sourceTree = "<group>"; };
 		4E4789522D2ECA070088215F /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		4E4789542D2F458F0088215F /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				4E47893E2D2DE97D0088215F /* UserLibraryApp.swift */,
+				4E4789542D2F458F0088215F /* LocationFetcher.swift */,
 				4E4789502D2EC9F30088215F /* View */,
 				4E4789512D2EC9F90088215F /* Model */,
 				4E4789422D2DE97E0088215F /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 			files = (
 				4E4789412D2DE97D0088215F /* ContentView.swift in Sources */,
 				4E47893F2D2DE97D0088215F /* UserLibraryApp.swift in Sources */,
+				4E4789552D2F458F0088215F /* LocationFetcher.swift in Sources */,
 				4E47894D2D2E04CC0088215F /* User.swift in Sources */,
 				4E4789532D2ECA070088215F /* UserDetailView.swift in Sources */,
 				4E47894F2D2E17CF0088215F /* AddUserView.swift in Sources */,
@@ -303,6 +307,7 @@
 				DEVELOPMENT_TEAM = 7TBPHA4CSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please able location when in use usage.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +337,7 @@
 				DEVELOPMENT_TEAM = 7TBPHA4CSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please able location when in use usage.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
